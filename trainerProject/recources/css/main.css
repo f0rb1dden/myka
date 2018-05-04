@@ -1,0 +1,589 @@
+/* FICTIONAL CASE STUDY WEBSITE*/
+
+/* WEBSITE COLOR THEME*/
+/*
+Main Colours:
+Primary colour - rgb(183, 154, 246); //purple for navigation links
+Secondary colour - rgb(53, 38, 80); //darker purple
+Third colour - rgb(200, 177, 250); //lighter purple*/
+
+
+
+
+/*===================== MOBILE DEFAULT STYLING (GLOBAL DEFAULT) =========================*/
+
+/*PREVENT ADJUSTMENTS OF FONT SIZE AFTER ORIENTATION SPECIFICALY FOR IE AND WINDOWS PHONE */
+
+html{
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    
+}
+
+/* APPLY A NATURAL BOX MODEL LAYOUT TO ALL ELEMENTS */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing:border-box;
+    
+}
+
+
+
+
+/* ================================================EMBEDED FONTS============================================*/
+
+
+@font-face{
+    font-family:'28_days';
+        src: url(/vendors/fonts/28_days_later-webfont.eot);
+        src: url(/vendors/fonts/28_days_later-webfont.woff2) format('woff2'),
+         url(/vendors/fonts/28_days_later-webfont.woff)  format('woff'),
+         url(/vendors/fonts/28_days_later-webfont.ttf)   format('truetype'),
+         url(/vendors/fonts/28_days_later-webfont.svg)   format('svg');
+    font-weight:normal;
+    font-style:normal;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================ SETS THE IMAGES AND VIDEOS TO BE 100% of THEIR CONTAINERS*/
+
+img{
+    width: 100%;
+}
+
+body {
+    font-family: serif, sans-serif;
+    font-size: 16px;
+    color:rgb(44,44,44);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+/* ----------------------- HOME SECTION    --------------------*/
+
+.myVideo {
+    display: none;
+}
+
+.homeBgImage{
+    position: relative; 
+    background-image: url(/recources/img/trainerHomePage.jpg);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height:auto;
+    height: 100vh; 
+       
+
+}
+.logoC {   
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 45px;
+    
+}
+
+.basketIcon{
+    color: rgb(200, 177, 250);
+    position: absolute ;
+    top: 10px;
+    left: 45vw;
+    width: 40px;
+    z-index: 4;
+    
+}
+.fa-shopping-basket
+{
+font-size: 2em;
+}
+.headerC{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+/*          NAVIGATION SECTION                            */
+.navC {
+    color: rgb(255, 255, 255);
+    background-color: rgb(53, 38, 80);
+    
+}
+
+
+/*        THIS IS FOR THE MENU ICON &#9776;                                                      */
+#navBtn {
+    display: block;
+    font-size: 2.5em;
+    width: 20%;
+    background-color: rgb(23, 10, 43);
+    text-align: center;
+    margin: 0 5vw 0 75vw;
+    padding: 7px 2px;
+}
+
+.menu-items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav li a {
+    color: rgb(255, 255, 255);
+    text-align: right;
+    border-top: 3px; 
+    text-transform: uppercase;
+    font-family: 'mukta', serifs;
+/*    font-family: serif, sans-serif;*/
+}
+/*======================COME BACK TO ADD THE ADDITIONAL CLASSES TO HIDE ====================*/
+.menu-items {
+    display: none;
+    
+}
+
+.slogan {
+    
+    font-family: '28_days';
+    color: rgb(255, 255, 255); 
+    font-size: 2.5em;
+    text-align: right;
+    padding: 150px 5vw 0 0;
+    
+}
+
+.mainHeading{
+    
+    font-family: 'Lovers Quarrel', cursive;
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    letter-spacing: 3px;
+    text-align: center;
+    font-weight: lighter;
+    margin: 45vh auto 0 auto;
+}
+.newArrivalsB{
+    display: block;
+    color: rgb(255, 255, 255); 
+    padding: 15px 20px;
+    margin: 10px 30vw 0 auto;
+    border-radius: 5px 5px;
+    border: 1px solid rgba(113, 12, 12, 0.5); 
+    background-color: rgba(200, 177, 250, 0.25);
+    cursor: pointer; 
+    font-family: aerial, sans-serif;
+    
+}
+
+
+
+
+
+
+
+
+/*============================== PRODUCTS        ===============================*/
+
+
+
+h1 {
+    font-size: 2em;
+    font-family: 'Mukta', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    
+}
+
+.caption {
+    text-align: center;
+    padding: 0 10px;
+    
+}
+
+figure {
+    margin: 0;
+}
+
+figcaption {
+   font-size: 0.8em;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+
+.allProducts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.allProducts article button {
+    display: block;
+    padding: 15px 20px;
+    border-radius: 5px 5px;
+    background-color: rgb(53, 38, 80);
+    border: 1px solid rgb(255, 255, 255);
+    margin: 2vh auto 15vh auto;
+}
+.allProducts article button a {
+    font-family:  'Mukta', sans-serif;
+    color: rgb(255, 255, 255);
+    }
+article {
+    margin: 1%;
+    text-align: center;
+    width: 230px;
+
+}
+/* PRODUCT SECTION ENDS*/
+/* CONTACT US SECTION*/
+
+.informpr {
+    text-align: center;
+    padding: 0 30px;
+    color: rgb(255, 255, 255);
+    font-size: 0.8em;
+     font-family: 'Mukta', sans-serif;
+    font-weight: lighter;
+    
+}
+
+.cntbtn {
+    display: block;
+    font-family: 'Mukta', sans-serif;
+    padding: 15px 20px;
+    border-radius: 5px 5px;
+    background-color: rgb(53, 38, 80);
+    border: 1px solid rgb(53, 38, 80);
+    margin: 10px 28vw 10px auto;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    
+}
+.cntbtn2 {
+    display: block;
+    font-family: 'Mukta', sans-serif;
+    padding: 8px 10px;
+    border-radius: 5px 5px;
+    background-color: rgb(53, 38, 80);
+    border: 1px solid rgb(53, 38, 80);
+    margin: 5px 35vw 5px 35vw;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.2em;
+    font-family: 'Mukta', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 10px 15px;
+    
+}
+.infocontact {
+    text-align: center;
+    padding: 0 10px;
+    margin: 0 auto;
+    font-size: 0.9em;
+    color: rgb(255, 255, 255);
+    
+}
+
+.bgimagecnt {
+
+    position: relative; 
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgb(0, 0, 0, 0.8)), url(/recources/img/trainerContactBackground.jpg);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height:auto;
+    height: 100vh; 
+
+}
+
+.headerone {
+    color: rgb(255, 255, 255);
+    padding: 60px 0 0 0;
+    font-size: 1.5em;
+}
+
+.pcnt {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+/*==================================================LOGIN STARTS=========================================================*/
+
+.name {
+    text-align: left;
+    padding: 
+    
+    
+}
+.email {
+    text-align: left;
+}
+.message {
+    text-align: left;
+}
+.send {
+    text-align: left;
+}
+
+
+/*===================================================MOBILE STYLES 568PX - RESOLUTION=============================================*/
+
+@media screen and (min-width: 568px){
+        
+.slogan {
+    font-size: 2.5em;
+    padding: 150px 5vw 0 0;
+    
+}
+
+.mainHeading{
+    margin: 65vh auto 0 auto;
+}
+.newArrivalsB{
+    padding: 15px 20px;
+    margin: 10px 35vw 0px 35vw;
+}
+
+    
+/*
+.allProducts article button {
+    margin: 10px 20vw 10px auto;
+}
+*/
+    
+    figcaption {
+        padding: 0;
+        margin-bottom: 10px;
+        height: 50px;
+    }
+    
+    
+    
+    
+}
+
+/*===================================================TABLET STYLES 768PX - RESOLUTION=============================================*/
+
+
+@media screen and (min-width: 768px){
+
+.newArrivalsB{
+    margin: 10px 10vw 10px 30vw;
+    font-size: 2.2em;
+}
+.mainHeading{
+    margin: 50vh 0 0 0;
+    font-size: 2.5em;
+    }
+.slogan {
+    font-size: 3em;
+    padding: 250px 10px 0 0;
+    letter-spacing: 8px;
+    }
+    
+.homeBgImage{
+    position: relative; 
+    background-image: url(/recources/img/trainerHomePage.jpg);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh; 
+}
+
+    .allProducts article button{
+        margin-bottom: 0;
+    }
+}
+
+
+
+/*===================================================DESKTOP STYLES 1024PX - RESOLUTION=============================================*/
+ @media screen and (min-width: 1024px) {
+     
+     .myVideo {
+         display: inline-block;
+         background-size: cover;
+         position: absolute;
+         top: 0;
+         right: 0;
+         z-index: -1000;
+         width: 100%;
+         height: auto;
+     } 
+     .homeBgImage{
+         background-image: none;
+         background: -webkit-linear-gradient(rgba(0, 0, 0, 0.48), rgba(0, 0, 0, 0.53));
+         overflow-y: hidden;
+         
+     }
+
+    #navBtn, .basketIcon {
+        display: none;
+    }    
+    
+    .menu-items{
+        display: inline;
+    }
+    
+    .logoC{
+     top: 80px;
+     left: 7vw;
+     width: 120px;
+        
+    }
+     
+/*===============================================NAVIGATION=====================================================================*/
+     
+    .navC {
+        text-align: right;
+        border-bottom: none; 
+        height: 50px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    
+     }
+     nav li a{
+         border-top: none;
+         font-size: 0.9em;
+         letter-spacing: 0.5px;
+     }
+     nav a:hover {
+        color: rgb(200, 177, 250);
+     }
+     
+     .menu-items a {
+         display: inline;
+         text-align: center;
+         
+     }
+
+     .menu-items li {
+         border-top: none;
+         display: inline;
+         padding: 0 90px 0 0;
+     }
+     
+     .allProducts{
+         column-count: 4;
+     }
+/*================== END OF NAVIGATION===================================================================================*/
+
+/*========================================  EXCLUSIVE TRAINERS BUTTON AND LIMITED EDITION===============     */
+     
+.slogan {
+    padding: 50vh 15vw 0 0;  
+}
+
+.mainHeading{   
+    padding: 5px 10px; 
+    margin: 10px 80vw 0 auto;
+    font-size: 1.5em;
+}
+.newArrivalsB{ 
+    padding: 15px 20px;
+    margin: 10px 83vw 0 auto;
+    font-size: 1.5em;
+}
+
+/*====================================== END OF BUTTON AND TRAINERS==============================================*/
+     
+     
+     
+     
+/*============================================ PRODUCTS================================================*/
+ 
+     
+     
+     
+/*=============================================CONTACT US PAGE===================================*/
+     
+     
+     
+.informpr {
+    text-align: center;
+    padding: 0 30px;
+    font-size: 1em;
+
+    
+}
+
+.cntbtn {
+    padding: 15px 20px;
+    margin: 10px 28vw 10px auto;
+}
+.cntbtn2 {
+    padding: 8px 10px;
+    margin: 5px 35vw 5px 35vw;
+    text-align: center;
+}
+
+h2 {
+    text-align: left;
+    padding: 0px 200px;
+    
+}
+.infocontact {
+    text-align: left;
+    padding: 0 200px;
+    margin: 0 auto;
+    
+}
+
+     
+.cntbtn {
+    padding: 10px 10px;
+    margin: 10px 28vw 10px 5vw;
+
+     
+     }
+
+
+.cntbtn2 {
+    padding: 10px 10px;
+    margin: 5px 0vw 5px 5vw;
+}
+   
+     #map {
+         width: 100%;
+         height:450px;
+     }
+     
+     
+     
+     
+     
+     
+}
+     

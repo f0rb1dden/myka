@@ -1,0 +1,100 @@
+/* ------------------------------------------------------------------------------------
+
+					FLEXBOX DEMO FOR PRACTICE
+
+
+------------------------------------------------------------------------------------ */
+
+html, body {
+	background-color: black;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#flexC {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+ul li {
+	/*height: 150px;*/
+	padding-top: 45px;
+	color: white;
+	font-weight: bold;
+	font-size: 2.2em;
+	text-align: center;
+}
+
+ul li:first-child { background-color: burlywood; }
+ul li:nth-child(2) { background-color:cadetblue; }
+ul li:nth-child(3) { background-color: darkkhaki; }
+ul li:nth-child(4) { background-color: crimson; }
+ul li:nth-child(5) { background-color: fuchsia; }
+ul li:last-child { background-color: chartreuse; }
+
+
+
+/* FIRST IN AM GOING TO INTRODUCE THE FLEX DISPLAY */
+
+
+#flexC {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	background-color: aqua;
+}
+
+
+/* MAKE ALL THE ITEMS EQUAL SIZE TO THE VIEW PORT */
+
+
+ul li {
+	/*flex-grow: 1;*/
+	/*height: 150px;*/
+	padding-top: 45px;
+	color: white;
+	font-weight: bold;
+	font-size: 2.2em;
+	text-align: center;
+}
+
+
+
+
+
+
+#flexC {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	background-color: aqua;
+	height: 500px;
+	align-items: stretch;
+
+
+}
+
+ul li {
+	/*flex-grow: 1;*/
+	width: 100px;
+	padding-top: 45px;
+	color: white;
+	font-weight: bold;
+	font-size: 2.2em;
+	text-align: center;
+}
+
+ul li:first-child { background-color: burlywood; }
+ul li:nth-child(2) { background-color:cadetblue; }
+ul li:nth-child(3) { background-color: darkkhaki; align-self: baseline; }
+ul li:nth-child(4) { background-color: crimson; }
+ul li:nth-child(5) { background-color: fuchsia; }
+ul li:last-child { background-color: chartreuse; }
+
+
+
+
